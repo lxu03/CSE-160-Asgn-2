@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blocky Animal</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="800" height="700">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p></p>
+    <p id="numdot"> XXX </p>
+    <p> Shift click for shrimp mode </p>
+    Camera Yaw <input type="range" min="-180" max="180" value="5" class="slider" id="angleYSlide">
+    Camera Pitch <input type="range" min="-180" max="180" value="0" class="slider" id="angleXSlide">
+    <p>
+    Rear Segment 1 Angle <input type="range" min="-5" max="5" value="0" class="slider" id="rearSeg1Slide">
+    <p>
+    Rear Segment 2 Angle <input type="range" min="-10" max="10" value="0" class="slider" id="rearSeg2Slide">
+    <p>
+    Rear Segment 3 Angle <input type="range" min="-5" max="5" value="0" class="slider" id="rearSeg3Slide">
+    <p>
+    Animation:
+    <p>
+    <button type="button" id="animationSwimOnButton"> ON </button>
+    <button type="button" id="animationSwimOffButton"> OFF </button>
+
+    <p>Liam Xu</p>
+    <p>liyxu@ucsc.edu</p>
+    <p>Notes to grader: None</p>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="TriangularPrism.js"></script>
+    <script src="BlockyAnimal.js"></script>
+  </body>
+</html>
